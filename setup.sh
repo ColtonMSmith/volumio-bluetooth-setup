@@ -6,13 +6,13 @@
 
 install_dependencies() {
   #TODO clean up that mess probably not half of it is necessary
-  sudo apt install pulseaudio-module-bluetooth python-dbus libltdl-dev pulseaudio libtool intltool \
+  sudo apt-get install pulseaudio-module-bluetooth python-dbus libltdl-dev pulseaudio libtool intltool \
   libsndfile-dev libcap-dev libjson0-dev libasound2-dev libavahi-client-dev libbluetooth-dev libglib2.0-dev \
   libsamplerate0-dev libsbc-dev libspeexdsp-dev libssl-dev libtdb-dev libbluetooth-dev intltool autoconf \
   autogen automake build-essential libasound2-dev libflac-dev libogg-dev libtool libvorbis-dev pkg-config python \
   --no-install-recommends
 
-  sudo apt install bluez bluez-firmware libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev \
+  sudo apt-get install bluez bluez-firmware libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev \
   libreadline-dev libltdl-dev libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev \
   libspeexdsp-dev liborc-0.4-dev intltool libtdb-dev libssl-dev libjson0-dev libsbc-dev libcap-dev \
   --no-install-recommends
@@ -105,7 +105,7 @@ restart_services() {
 # TODO cmdline args
 # setup sequence
 install_dependencies
-get_bluetooth_name
+set_bluetooth_name
 setup_volume_watcher
 setup_pulse_audio
 add_udev_rule
