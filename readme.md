@@ -12,7 +12,7 @@ Tested on rpi2 / volumio 2.389 (rasbian jessie) / duriosound dac / bluetooth don
 
 ```bash
 ssh volumio@volumio.local
-git clone https://github.com/vrince/volumio-bluetooth-setup.git
+git clone https://github.com/ColtonMSmith/volumio-bluetooth-setup.git
 cd volumio-bluetooth-setup
 sudo ./setup.sh
 ```
